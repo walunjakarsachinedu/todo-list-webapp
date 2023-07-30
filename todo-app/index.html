@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Todo</title>
+  <!-- overall style -->
+  <link rel="stylesheet" href="./style.css">
+  <!-- font:inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
+  <!-- icon: remove -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20,400,0,0" />
+</head>
+<body>
+  <div class="center">
+    <div class="card">
+      <h2>
+        To-Do List <img src="./images/icon.png" alt=""> 
+      </h2>
+      <div class="input-section">
+        <input type="text" placeholder="Add your task" id="input-box">
+        <button>Add</button>
+      </div>
+      <section class="tasks" id="task-list">
+        <div class="task"> 
+          <img src="./images/unchecked.png" alt="" data-checked="false" onclick="toggleTask(this)">
+          <input class="task-name" placeholder="Enter task name"> </input>
+          <span class="material-symbols-outlined icon-button" onclick="removeTask(this)">
+            close
+          </span>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+</html>

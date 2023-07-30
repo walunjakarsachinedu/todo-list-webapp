@@ -1,0 +1,95 @@
+* {
+  font-family: 'Inter';
+}
+
+body {
+  background: linear-gradient(-45deg, blue, purple);
+  height: 100vh;
+  width: 100wh;
+}
+
+.center {
+  width: 100%;
+  height: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: 400px;
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 10px 10px;
+}
+
+.card h2 {
+  margin: 0px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: start;
+}
+
+.card img {
+  width: 30px;
+  padding-left: 10px;
+}
+
+.card .input-section {
+  height: 50px;
+  width: 100%;
+  display: flex;
+  background-color: rgba(211, 211, 211, 0.5);
+  border-radius: 50px;
+}
+
+.card .input-section input {
+  border: 0px;
+  flex-grow: 1;
+  border-radius: 20px;
+  background-color: transparent;
+  outline: none;
+  padding: 20px 20px 20px 30px;
+}
+
+.card button {
+  border: 0px;
+  background-color: rgb(255, 119, 0);
+  width: 120px;
+  border-radius: 50px;
+  color: white;
+}
+
+.tasks {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.task {
+  display: flex;
+  align-items: center;
+  padding: 10px 10px;
+}
+
+input.task-name {
+  padding: 0;
+  flex-grow: 1;
+}
+
+.task img {
+  width: 20px;
+}
+
+.icon-button {
+  cursor: pointer;
+}
+
+
+.task input {
+  margin-left: 10px;
+  font-weight: lighter;
+  font-size: 14px;
+  border: none;
+  outline: none;
+}
