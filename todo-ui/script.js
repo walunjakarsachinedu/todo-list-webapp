@@ -35,6 +35,7 @@ class Tasks {
 
 
 const tasks = new Tasks();
+const taskAddButton = document.getElementById("add-task-button");
 const inputBox = document.getElementById("input-box");
 const taskList = document.getElementById("task-list");
 
@@ -78,5 +79,5 @@ function removeTask(task) {
   task.parentNode.remove();
 }
 
-
+taskAddButton.addEventListener('click', () => addNewTask(inputBox.value));
 inputBox.addEventListener("keypress", handleKeyPress);
